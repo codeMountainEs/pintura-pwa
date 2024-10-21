@@ -6,7 +6,7 @@
 
         <title>{{ $title ?? 'IR Acústica' }}</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+        @laravelPWA
     </head>
     <body class="">
 
