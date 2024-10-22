@@ -82,6 +82,8 @@ new class extends Component {
             'descripcion' => $tipo,
         ]);
 
+
+
         session()->flash('message', $usuario['name'].':  Registro '.$tipo.' Realizado Correctamente     ('.$accesosHoy.')');
         $this->reset(['botonesSeleccionados', 'mostrarAsteriscos']);
         $this->resetear();
@@ -119,9 +121,11 @@ new class extends Component {
             <!-- End Title -->
 
 
-            <div class=" h-2 w-full sm:flex  sm:justify-center sm:items-center text-center sm:text-start">
+                <div class=" h-2 w-full sm:flex  sm:justify-center sm:items-center text-center sm:text-start">
                 <div x-data="{ showMessage: true }" x-init="setTimeout(() => showMessage = false, 3000)">
                     @if (session()->has('message'))
+                        {{--<livewire:partials.flash-message :show='true' :message="'Error al guardar los datos'" :type="'success'" />--}}
+
                         <div class="h-full w-full bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert"  
                              x-show="showMessage">
                             <strong class="font-bold">Correcto!</strong>
@@ -167,6 +171,7 @@ new class extends Component {
 
 
                 </div>
+
             </div>
 
 

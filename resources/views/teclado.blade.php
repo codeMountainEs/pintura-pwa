@@ -16,5 +16,6 @@
 <body class="antialiased font-sans">
     <livewire:accesos.create />
 
+
 </body>
 </html>

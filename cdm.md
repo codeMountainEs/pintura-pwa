@@ -192,3 +192,13 @@ php artisan make:notifications-table
 php artian queue:work
 
 ## activar en servidor 
+
+# laravel pwa
+https://github.com/silviolleite/laravel-pwa
+
+
+## CREAR COMPONETE FLASH LIVEWIRE TAIL REUTILZABLE 
+
+php artisan make:partials.mensaje
+
+php artisan make:livewire partials.mensaje
