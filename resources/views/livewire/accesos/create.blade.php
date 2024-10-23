@@ -77,8 +77,8 @@ new class extends Component {
 
         \App\Models\Acceso::create([
             'user_id' => $usuario['id'], // Asumimos que el usuario está autenticado
-            'fecha' => \Carbon\Carbon::now()->format('Y-m-d'),
-            'hora' => \Carbon\Carbon::now()->format('H:i:s'),
+            'fecha' => \Carbon\Carbon::now('Europe/Madrid')->format('Y-m-d'),
+            'hora' => \Carbon\Carbon::now('Europe/Madrid')->format('H:i:s'),
             'descripcion' => $tipo,
         ]);
 
