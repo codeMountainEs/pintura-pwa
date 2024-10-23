@@ -59,7 +59,7 @@ new class extends Component {
 
         // Obtener los accesos de hoy para este usuario
         $accesosHoy = \App\Models\Acceso::where('user_id', $usuario['id'])
-            ->whereDate('created_at', \Carbon\Carbon::today())
+            ->whereDate('created_at', \Carbon\Carbon::today('Europe/Madrid'))
             ->count();
 
         // Lógica para determinar el tipo de acceso
